@@ -6,5 +6,12 @@
 * Dataset
     * regions.pkl : pkl file, 裡面為一list包含所有region
     * tagsInsideUnique.pkl, 裡面為一list 包含所有tags(已刪除標點符號)
-    * 用法：
-
+    * 用法： 
+    ```python
+    with open('tagsInsideUnique.pkl','rb') as f:
+        tagsInsideUnique = pickle.load(f)
+    with open('regions.pkl','rb') as f:
+        regions = pickle.load(f)
+    ```
+    
+      
