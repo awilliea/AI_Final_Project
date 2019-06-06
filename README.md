@@ -13,5 +13,6 @@
     with open('regions.pkl','rb') as f:
         regions = pickle.load(f)
     ```
+* 可以使用Data_preprocess.ipynb最後Tripadvisior那邊的code將tripadvisior搜尋後的景點list抓取下來
     
       
