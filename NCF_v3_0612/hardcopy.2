@@ -1,0 +1,43 @@
+Iteration 18 [57.3 s]: HR = 0.6735, NDCG = 0.4011, loss = 0.2310 [2.0 s]
+Iteration 19 [57.3 s]: HR = 0.6776, NDCG = 0.4043, loss = 0.2302 [2.0 s]
+End. Best Iteration 17:  HR = 0.6826, NDCG = 0.4042.
+The best NeuMF model is saved to Pretrain/ml-1m_NeuMF_8_[64,32,16,8]_155974994
+6.h5
+(py2) chuying@Sakura:~/AI/NCF$ python NeuMF.py --dataset ml-1m --epochs 20 --b
+atch_size 256 --num_factors 8 --layers [64,32,16,8] --num_neg 4 --lr 0.001 --l
+earner adam --verbose 1 --out 1 --mf_pretrain Pretrain/ml-1m_GMF_8_1501651698.
+h5 --mlp_pretrain Pretrain/ml-1m_MLP_[64,32,16,8]_1501652038.h5
+Using Theano backend.
+NeuMF arguments: Namespace(batch_size=256, dataset='ml-1m', epochs=20, layers=
+'[64,32,16,8]', learner='adam', lr=0.001, mf_pretrain='Pretrain/ml-1m_GMF_8_15
+01651698.h5', mlp_pretrain='Pretrain/ml-1m_MLP_[64,32,16,8]_1501652038.h5', nu
+m_factors=8, num_neg=4, out=1, path='Data/', reg_layers='[0,0,0,0]', reg_mf=0,
+ verbose=1)
+Load data done [9.1 s]. #user=6040, #item=3706, #train=994169, #test=6040
+Load pretrained GMF (Pretrain/ml-1m_GMF_8_1501651698.h5) and MLP (Pretrain/ml-
+1m_MLP_[64,32,16,8]_1501652038.h5) models done.
+Init: HR = 0.6710, NDCG = 0.3969
+Iteration 0 [59.8 s]: HR = 0.6694, NDCG = 0.3983, loss = 0.2380 [2.0 s]
+Iteration 1 [57.2 s]: HR = 0.6720, NDCG = 0.3996, loss = 0.2366 [2.0 s]
+Iteration 2 [57.3 s]: HR = 0.6745, NDCG = 0.3996, loss = 0.2351 [2.0 s]
+Iteration 3 [57.2 s]: HR = 0.6715, NDCG = 0.3995, loss = 0.2341 [2.0 s]
+Iteration 4 [57.1 s]: HR = 0.6775, NDCG = 0.3991, loss = 0.2332 [2.0 s]
+Iteration 5 [57.2 s]: HR = 0.6825, NDCG = 0.4040, loss = 0.2321 [2.0 s]
+Iteration 6 [57.2 s]: HR = 0.6722, NDCG = 0.3999, loss = 0.2314 [2.0 s]
+Iteration 7 [57.3 s]: HR = 0.6829, NDCG = 0.4046, loss = 0.2305 [2.0 s]
+Iteration 8 [57.8 s]: HR = 0.6810, NDCG = 0.4018, loss = 0.2294 [2.0 s]
+Iteration 9 [57.7 s]: HR = 0.6839, NDCG = 0.4051, loss = 0.2291 [2.0 s]
+Iteration 10 [57.6 s]: HR = 0.6720, NDCG = 0.3980, loss = 0.2284 [2.0 s]
+Iteration 11 [57.2 s]: HR = 0.6728, NDCG = 0.4001, loss = 0.2276 [2.0 s]
+Iteration 12 [57.4 s]: HR = 0.6785, NDCG = 0.4032, loss = 0.2272 [2.0 s]
+Iteration 13 [57.4 s]: HR = 0.6800, NDCG = 0.4044, loss = 0.2265 [2.0 s]
+Iteration 14 [57.2 s]: HR = 0.6773, NDCG = 0.4056, loss = 0.2260 [2.0 s]
+Iteration 15 [57.2 s]: HR = 0.6813, NDCG = 0.4058, loss = 0.2257 [2.0 s]
+Iteration 16 [57.6 s]: HR = 0.6800, NDCG = 0.4034, loss = 0.2251 [2.0 s]
+Iteration 17 [57.5 s]: HR = 0.6805, NDCG = 0.4048, loss = 0.2246 [2.0 s]
+Iteration 18 [57.4 s]: HR = 0.6798, NDCG = 0.4039, loss = 0.2241 [2.0 s]
+Iteration 19 [57.5 s]: HR = 0.6825, NDCG = 0.4052, loss = 0.2239 [2.0 s]
+End. Best Iteration 9:  HR = 0.6839, NDCG = 0.4051.
+The best NeuMF model is saved to Pretrain/ml-1m_NeuMF_8_[64,32,16,8]_155975230
+5.h5
+(py2) chuying@Sakura:~/AI/NCF$
