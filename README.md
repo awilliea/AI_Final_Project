@@ -15,4 +15,7 @@
     ```
 * 可以使用Data_preprocess.ipynb最後Tripadvisior那邊的code將tripadvisior搜尋後的景點list抓取下來
     
-      
+---
+Note : 
+   User data : 2206筆
+   Attraction data : 3487筆
