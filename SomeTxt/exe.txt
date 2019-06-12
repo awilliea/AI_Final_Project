@@ -1,0 +1,34 @@
+python NeuMF.py --dataset ai --epochs 20 --batch_size 256 --num_factors 128 --layers [64,32,16,8] --reg_mf 0 --reg_layers [0,0,0,0] --num_neg 4 --lr 0.001 --learner adam --verbose 1 --out 1
+
+
+python GMF.py --dataset ai --epochs 100 --batch_size 256 --num_factors 16 --regs [0,0] --num_neg 4 --lr 0.001 --learner adam --verbose 1 --out 1
+
+
+
+python MLP.py --dataset ai --epochs 100 --batch_size 256 --layers [128,64,32,16,8] --reg_layers [0,0,0,0,0] --num_neg 4 --lr 0.001 --learner adam --verbose 1 --out 1
+
+Origen :
+python test.py --t [8,30,39,40,44,62,63,75,83,97,102,103] --r [1] --m ai_NeuMF_64_[64,32,16,8]_1560252951.h5
+Ours :
+python test.py --t [8,30,39,40,44,62,63,75,83,97,102,103] --r [1] --m ai_NeuMF_64_[64,32,16,8]_1560311620.h5
+try :
+python test.py --t [8,30,39,40,44,62,63,75,83,97,102,103] --r [] --m ai_NeuMF_128_[64,32,16,8]_1560322934.h5
+
+
+
+Input Type :
+森林
+景觀徒步區
+健行和露營遊覽
+==========
+龍騰斷橋
+內灣老街
+勝興車站
+天空之城
+蓬萊溪護魚步道
+魔法莊園
+五月雪步道
+香山濕地
+鹿場
+半天寮好望角
+同興老街
